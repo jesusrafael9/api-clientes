@@ -17,7 +17,12 @@ Clonar el repositorio
 git clone https://github.com/jesusrafael9/api-clientes.git
 ```
 
-Mvn clean install
+Ingresar al directorio del proyecto
+```shell
+cd api-clientes
+```
+
+Ejecutar el siguiente comando para instalar las dependencias
 ```shell
 mvn clean install
 ```
