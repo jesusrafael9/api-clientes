@@ -44,4 +44,4 @@ docker run -p 8080:8080 cliente-app
 [Clientes.postman_collection.json](doc%2FClientes.postman_collection.json)
 
 ### Documentación de Open API
-[clientes-openapi](doc%2Fclientes-openapi.yaml)
+[Visualiza la documentación en Redoc Editor](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/jesusrafael9/api-clientes/main/docs/clientes-openapi.yaml)
