@@ -14,7 +14,7 @@ Para obtener más información, consulte las siguientes secciones:
 
 Clonar el repositorio
 ```shell
-git clone
+git clone https://github.com/jesusrafael9/api-clientes.git
 ```
 
 Mvn clean install
