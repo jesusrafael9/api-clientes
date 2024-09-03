@@ -1,61 +1,61 @@
 {
 	"info": {
-		"_postman_id": "2fad3f9b-498d-4775-9d40-c0b142133f55",
-		"name": "Generated from HAR",
-		"description": "HAR To Postman Generated Collection",
+		"_postman_id": "07d51abf-a41a-42a7-bdf4-34d6fd2350d4",
+		"name": "Clientes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1416918"
 	},
 	"item": [
 		{
-			"name": "localhost:8080/clientes/1",
+			"name": "Delete Cliente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": []
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL1}}/clientes/1",
+					"raw": "http://localhost:8080/clientes/1",
+					"protocol": "http",
 					"host": [
-						"{{baseURL1}}"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
 						"clientes",
 						"1"
 					]
 				}
 			},
-			"response": [
-				{
-					"name": "no-content / 204",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{baseURL1}}/clientes/1",
-							"host": [
-								"{{baseURL1}}"
-							],
-							"path": [
-								"clientes",
-								"1"
-							]
-						}
-					},
-					"status": "No Content",
-					"code": 204,
-					"_postman_previewlanguage": "Text",
-					"header": [
-						{
-							"key": "Date",
-							"value": "Sun, 01 Sep 2024 09:18:19 GMT"
-						}
-					],
-					"cookie": [],
-					"body": ""
-				}
-			]
+			"response": []
 		},
 		{
-			"name": "localhost:8080/clientes/1",
+			"name": "Update Cliente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": []
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -64,116 +64,79 @@
 						"value": "application/json"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"persona\": {\n\t\t\"nombre\": \"Jesus Cardozo\",\n\t\t\"genero\": \"Masculino\",\n\t\t\"edad\": 35,\n\t\t\"identificacion\": \"987654321\",\n\t\t\"direccion\": \"Calle  123\",\n\t\t\"telefono\": \"1167542997\"\n\t},\n  \"email\": \"jesus.updated@example.com\",\n  \"contrasena\": \"cambio de clave\",\n  \"estado\": \"Activo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "{{baseURL1}}/clientes/1",
+					"raw": "http://localhost:8080/clientes/1",
+					"protocol": "http",
 					"host": [
-						"{{baseURL1}}"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
 						"clientes",
 						"1"
 					]
 				}
 			},
-			"response": [
-				{
-					"name": "successfully / 200",
-					"originalRequest": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseURL1}}/clientes/1",
-							"host": [
-								"{{baseURL1}}"
-							],
-							"path": [
-								"clientes",
-								"1"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 01 Sep 2024 09:15:08 GMT"
-						}
-					],
-					"cookie": [],
-					"body": "{\n \"id\": 1,\n \"persona\": {\n  \"id\": 2,\n  \"nombre\": \"Jesus Cardozo\",\n  \"genero\": \"Masculino\",\n  \"edad\": 35,\n  \"identificacion\": \"987654321\",\n  \"direccion\": \"Calle  123\",\n  \"telefono\": \"1167542997\"\n },\n \"email\": \"jesus.updated@example.com\",\n \"contrasena\": \"cambio de clave\",\n \"estado\": \"Activo\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
-			"name": "localhost:8080/clientes",
+			"name": "Get Cliente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": []
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL1}}/clientes",
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
 					"host": [
-						"{{baseURL1}}"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
 						"clientes"
 					]
 				}
 			},
-			"response": [
-				{
-					"name": "successfully / 200",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{baseURL1}}/clientes",
-							"host": [
-								"{{baseURL1}}"
-							],
-							"path": [
-								"clientes"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Mon, 02 Sep 2024 20:14:08 GMT"
-						}
-					],
-					"cookie": [],
-					"body": "[\n {\n  \"id\": 1,\n  \"persona\": {\n   \"id\": 1,\n   \"nombre\": \"Juan\",\n   \"genero\": \"Masculino\",\n   \"edad\": 25,\n   \"identificacion\": \"1234567890\",\n   \"direccion\": \"Calle 123\",\n   \"telefono\": \"1234567890\"\n  },\n  \"email\": \"juan@devsu.com\",\n  \"contrasena\": \"123\",\n  \"estado\": \"Activo\"\n },\n {\n  \"id\": 2,\n  \"persona\": {\n   \"id\": 2,\n   \"nombre\": \"Maria\",\n   \"genero\": \"Femenino\",\n   \"edad\": 30,\n   \"identificacion\": \"0987654321\",\n   \"direccion\": \"Avenida 456\",\n   \"telefono\": \"0987654321\"\n  },\n  \"email\": \"maria@devsu.com\",\n  \"contrasena\": \"456\",\n  \"estado\": \"Activo\"\n },\n {\n  \"id\": 3,\n  \"persona\": {\n   \"id\": 3,\n   \"nombre\": \"Carlos\",\n   \"genero\": \"Masculino\",\n   \"edad\": 35,\n   \"identificacion\": \"1122334455\",\n   \"direccion\": \"Boulevard 789\",\n   \"telefono\": \"1122334455\"\n  },\n  \"email\": \"carlos@devsu.com\",\n  \"contrasena\": \"789\",\n  \"estado\": \"Activo\"\n }\n]"
-				}
-			]
+			"response": []
 		},
 		{
-			"name": "localhost:8080/clientes",
+			"name": "Crear Cliente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": []
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followRedirects": true,
+				"disableUrlEncoding": false,
+				"disableCookies": false
+			},
 			"request": {
 				"method": "POST",
 				"header": [
@@ -182,65 +145,28 @@
 						"value": "application/json"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"persona\": {\n\t\t\"nombre\": \"Jesus Cardozo\",\n\t\t\"genero\": \"Masculino\",\n\t\t\"edad\": 30,\n\t\t\"identificacion\": \"123456789\",\n\t\t\"direccion\": \"Calle 123\",\n\t\t\"telefono\": \"1145679889\"\n\t},\n\t\"email\": \"jesus.cardozo@example.com\",\n  \"contrasena\": \"mi_contraseña_segura\",\n  \"estado\": \"Activo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "{{baseURL1}}/clientes",
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
 					"host": [
-						"{{baseURL1}}"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
 						"clientes"
 					]
 				}
 			},
-			"response": [
-				{
-					"name": "successfully / 200",
-					"originalRequest": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseURL1}}/clientes",
-							"host": [
-								"{{baseURL1}}"
-							],
-							"path": [
-								"clientes"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 01 Sep 2024 09:14:42 GMT"
-						}
-					],
-					"cookie": [],
-					"body": "{\n \"id\": 1,\n \"persona\": {\n  \"id\": 1,\n  \"nombre\": \"Jesus Cardozo\",\n  \"genero\": \"Masculino\",\n  \"edad\": 30,\n  \"identificacion\": \"123456789\",\n  \"direccion\": \"Calle 123\",\n  \"telefono\": \"1145679889\"\n },\n \"email\": \"jesus.cardozo@example.com\",\n \"contrasena\": \"mi_contraseña_segura\",\n \"estado\": \"Activo\"\n}"
-				}
-			]
-		}
-	],
-	"variable": [
-		{
-			"key": "baseURL1",
-			"value": "http://localhost:8080",
-			"type": "any"
+			"response": []
 		}
 	]
 }
