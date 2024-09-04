@@ -46,7 +46,7 @@ Correr imagen docker
 docker run -p 8080:8080 cliente-app
 ```
 ### POSTMAN 
-[Clientes.postman_collection.json](doc%2FClientes.postman_collection.json)
+[Clientes.postman_collection.json](docs%2FClientes.postman_collection.json)
 
 ### Documentación de Open API
 [Visualiza la documentación en Redoc Editor](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/jesusrafael9/api-clientes/main/docs/clientes-openapi.yaml)
