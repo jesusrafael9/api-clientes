@@ -40,7 +40,7 @@ public class DataInitializer {
                 cliente1.setId(1L);
                 cliente1.setEmail("juan@devsu.com");
                 cliente1.setContrasena("123");
-                cliente1.setEstado("Activo");
+                cliente1.setEstado("True");
 
                 Optional<Cliente> existingCliente1 = clienteService.getClienteById(cliente1.getId());
                 if (existingCliente1.isEmpty()) {
@@ -60,7 +60,7 @@ public class DataInitializer {
                 cliente2.setPersona(persona2);
                 cliente2.setEmail("maria@devsu.com");
                 cliente2.setContrasena("456");
-                cliente2.setEstado("Activo");
+                cliente2.setEstado("True");
 
                 Optional<Cliente> existingCliente2 = clienteService.getClienteById(cliente2.getId());
                 if (existingCliente2.isEmpty()) {
@@ -80,7 +80,7 @@ public class DataInitializer {
                 cliente3.setPersona(persona3);
                 cliente3.setEmail("carlos@devsu.com");
                 cliente3.setContrasena("789");
-                cliente3.setEstado("Activo");
+                cliente3.setEstado("True");
 
                 Optional<Cliente> existingCliente3 = clienteService.getClienteById(cliente3.getId());
                 if (existingCliente3.isEmpty()) {
