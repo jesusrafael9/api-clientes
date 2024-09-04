@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "07d51abf-a41a-42a7-bdf4-34d6fd2350d4",
+		"_postman_id": "c9369746-f1c9-401f-8af3-fce662975ef2",
 		"name": "Clientes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1416918"
@@ -66,7 +66,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"persona\": {\n\t\t\"nombre\": \"Jesus Cardozo\",\n\t\t\"genero\": \"Masculino\",\n\t\t\"edad\": 35,\n\t\t\"identificacion\": \"987654321\",\n\t\t\"direccion\": \"Calle  123\",\n\t\t\"telefono\": \"1167542997\"\n\t},\n  \"email\": \"jesus.updated@example.com\",\n  \"contrasena\": \"cambio de clave\",\n  \"estado\": \"Activo\"\n}",
+					"raw": "{\n\t\"persona\": {\n\t\t\"nombre\": \"Jesus Cardozo\",\n\t\t\"genero\": \"Masculino\",\n\t\t\"edad\": 35,\n\t\t\"identificacion\": \"987654321\",\n\t\t\"direccion\": \"Calle  123\",\n\t\t\"telefono\": \"1167542997\"\n\t},\n  \"email\": \"jesus.updated@example.com\",\n  \"contrasena\": \"cambio de clave\",\n  \"estado\": \"True\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -147,7 +147,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"persona\": {\n\t\t\"nombre\": \"Jesus Cardozo\",\n\t\t\"genero\": \"Masculino\",\n\t\t\"edad\": 30,\n\t\t\"identificacion\": \"123456789\",\n\t\t\"direccion\": \"Calle 123\",\n\t\t\"telefono\": \"1145679889\"\n\t},\n\t\"email\": \"jesus.cardozo@example.com\",\n  \"contrasena\": \"mi_contraseña_segura\",\n  \"estado\": \"Activo\"\n}",
+					"raw": "{\n\t\"persona\": {\n\t\t\"nombre\": \"Jesus Cardozo\",\n\t\t\"genero\": \"Masculino\",\n\t\t\"edad\": 30,\n\t\t\"identificacion\": \"123456789\",\n\t\t\"direccion\": \"Calle 123\",\n\t\t\"telefono\": \"1145679889\"\n\t},\n\t\"email\": \"jesus.cardozo@example.com\",\n  \"contrasena\": \"mi_contraseña_segura\",\n  \"estado\": \"True\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
